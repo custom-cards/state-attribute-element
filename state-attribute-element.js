@@ -6,7 +6,7 @@ class StateAttributeElement extends HTMLElement {
     const attr = this.config.attribute;
     const state = hass.states[entityId].attributes[attr];
     const card = document.createElement('state-attribute-element');
-    if (state != null) {
+    if (state.length != 0) {
       if (prefix_string) {
         this.innerHTML = prefix_string + state;
       } else {
