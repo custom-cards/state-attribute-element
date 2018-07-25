@@ -10,6 +10,7 @@ This element is **not** all that useful as a card (it can be used for that to), 
 | entity | string | **Required** | The entity_id of the entity you want to show.
 | attribute | string | **Required** | The attribute of the entity you want to show.
 | prefix | string | **Optional** | A string you want to show in front of the attribute, ex. "My prefix string: "
+| show_empty | boolean | **Optional** | Give you the possibility to show `unavailable` if the state is empty, default `false`
 
 ## Installation
 
