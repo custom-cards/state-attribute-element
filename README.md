@@ -9,7 +9,7 @@ This element is **not** all that useful as a card (it can be used for that to), 
 | type | string | **Required** | `custom:state-attribute-element`
 | entity | string | **Required** | The entity_id of the entity you want to show.
 | attribute | string | **Required** | The attribute of the entity you want to show.
-| prefix | string | **Optional** | The entity_id of the entity you want to show.
+| prefix | string | **Optional** | A string you want to show in front of the attribute, ex. "My prefix string: "
 
 ## Installation
 
