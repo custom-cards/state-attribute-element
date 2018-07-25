@@ -48,3 +48,20 @@ Add a custom element in your `ui-lovelace.yaml`
             attribute: my_attribute
             prefix: "My prefix string: "
 ```
+
+## Example with styles
+
+```yaml
+      - type: picture-elements
+        image: /local/files/LUfuf8ow.jpg
+        elements:
+          - type: custom:state-attribute-element
+            entity: sensor.tautulli__ludeeus
+            attribute: friendly_name
+            prefix: "<b style='font-weigth: bold; color: red'>Friendle name: </b>"
+            style:
+              top: 47%
+              left: 5px
+              transform: none
+```
+![example](example.png)
