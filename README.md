@@ -4,10 +4,12 @@ This element is **not** all that useful as a card (it can be used for that to), 
 
 ## Options
 
-| Name | Type | Default | Description
+| Name | Type | Requirement | Description
 | ---- | ---- | ------- | -----------
 | type | string | **Required** | `custom:state-attribute-element`
 | entity | string | **Required** | The entity_id of the entity you want to show.
+| attribute | string | **Required** | The attribute of the entity you want to show.
+| prefix | string | **Optional** | The entity_id of the entity you want to show.
 
 ## Installation
 
@@ -43,4 +45,5 @@ Add a custom element in your `ui-lovelace.yaml`
           - type: custom:state-attribute-element
             entity: sensor.my_sensor
             attribute: my_attribute
+            prefix: "My prefix string: "
 ```
