@@ -1,23 +1,14 @@
 class StateAttributeElement extends HTMLElement {
   set hass(hass) {
     const entityId = this.config.entity;
-    const prefix_string = this.config.prefix
+    const prefix_string = this.config.prefix || ''
+    const suffix_string = this.config.suffix || ''
     const show_empty = this.config.show_empty
     const attr = this.config.attribute;
     const state = hass.states[entityId].attributes[attr];
     const card = document.createElement('state-attribute-element');
-    if (state.length != 0) {
-      if (prefix_string) {
-        this.innerHTML = prefix_string + state;
-      } else {
-        this.innerHTML = state;
-      }
-    } else if (show_empty == true) {
-      if (prefix_string) {
-        this.innerHTML = prefix_string + state;
-      } else {
-        this.innerHTML = state;
-      }
+    if (state.length != 0 || show_empty === true) {
+      this.innerHTML = `${prefix_string}${state}${suffix_string}`
     }
   }
   setConfig(config) {
