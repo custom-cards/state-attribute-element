@@ -32,7 +32,7 @@ Link `state-attribute-element` inside you `ui-lovelace.yaml`.
 
 ```yaml
 resources:
-  - url: /local/state-attribute-element.js?v=0
+  - url: /local/state-attribute-element.js?v=0.3.0
     type: js
 ```
 
